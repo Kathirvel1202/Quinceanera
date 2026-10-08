@@ -6,7 +6,7 @@ if (headerSlot) {
         <header class="site-header">
             <nav class="navbar" aria-label="Main navigation">
                 <a href="index.html" class="brand">
-                    <img src="images/Qs.png" alt="Quinceañera event planner logo" class="brand-logo">
+                    <img src="images/QS.png" alt="Quinceañera event planner logo" class="brand-logo">
                     <span class="brand-name">Quinceañera<br>Sweet Sixteen</span>
                 </a>
                 <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
@@ -50,7 +50,7 @@ if (footerSlot) {
             <div class="footer-main">
                 <div class="footer-brand">
                     <a href="index.html" class="footer-brand-link">
-                        <img src="images/Qs.png" alt="Event planner logo" class="footer-logo">
+                        <img src="images/QS.png" alt="Event planner logo" class="footer-logo">
                         <span>Quinceañera<br>Sweet Sixteen</span>
                     </a>
                     <p>Celebrations shaped around your style, traditions, and priorities.</p>
