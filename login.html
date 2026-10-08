@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Quinceañera &amp; Sweet Sixteen Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body data-page="login">
+    <main>
+        <section class="auth-section">
+            <img class="auth-backdrop" src="images/pexels-8158387.jpg" alt="Family and guests sharing a quinceañera celebration">
+            <div class="auth-card">
+                <a class="auth-back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+                <nav class="auth-tabs" aria-label="Account pages">
+                    <a class="auth-tab" href="login.html" aria-current="page">Log in</a>
+                    <a class="auth-tab" href="signup.html">Register</a>
+                </nav>
+                <p class="eyebrow">YOUR PLANNING SPACE</p>
+                <h1>Welcome back</h1>
+                <p class="auth-intro">Log in to continue organizing your celebration.</p>
+                <form class="auth-form demo-form">
+                    <div class="field">
+                        <label for="loginEmail">Email address</label>
+                        <input id="loginEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="loginPassword">Password</label>
+                        <div class="password-control">
+                            <input id="loginPassword" name="password" type="password" autocomplete="current-password" required>
+                            <button class="password-toggle" type="button" data-password-toggle aria-controls="loginPassword" aria-label="Show password" aria-pressed="false"></button>
+                        </div>
+                    </div>
+                    <div class="auth-options">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                        <a class="auth-link" href="contact.html">Need help?</a>
+                    </div>
+                    <button class="button auth-submit" type="submit">Log in</button>
+                    <p class="form-confirmation" hidden>This is a front-end demo. Connect an authentication service to enable real logins.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
