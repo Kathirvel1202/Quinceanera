@@ -1,10 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>User Dashboard | Quinceañera Event Planner</title><link rel="stylesheet" href="css/style.css"><script src="js/site-shell.js" defer></script><script src="js/main.js" defer></script></head>
-<body data-page="user-dashboard"><div id="siteHeader"></div><main>
-    <section class="section"><div class="dashboard-top"><div><p class="eyebrow">YOUR PLANNING SPACE</p><h1>Welcome, Sofia’s family</h1><p>Sample dashboard view · Celebration date: June 12, 2027</p></div><a href="contact.html" class="button">Message your planner</a></div><img class="section-image" src="images/pexels-34738217.jpg" alt="Family and guests sharing a quinceañera celebration"></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">EVENT SNAPSHOT</p><h2>One view of the milestone ahead</h2></div><div class="stats-grid"><div class="stat-card"><strong>248</strong><span>Days to celebrate</span></div><div class="stat-card"><strong>120</strong><span>Guest estimate</span></div><div class="stat-card"><strong>68%</strong><span>Plan checklist complete</span></div><div class="stat-card"><strong>3</strong><span>Open decisions</span></div></div><p class="image-caption" style="text-align:center">A preview image for the celebration workspace.</p></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">NEXT ACTIONS</p><h2>Keep the next few tasks moving</h2></div><div class="dashboard-grid"><article class="dashboard-card"><h3>Planning progress</h3><p>12 of 18 checklist items complete</p><div class="progress-track" style="--progress:68%"><span></span></div><p>Next milestone: approve the room layout by October 18.</p></article><article class="dashboard-card"><h3>Tasks for your family</h3><div class="task-row"><span>Choose final invitation wording</span><span class="status">This week</span></div><div class="task-row"><span>Confirm ceremony participants</span><span class="status">Oct 18</span></div><div class="task-row"><span>Review music shortlist</span><span class="status">Oct 24</span></div></article><article class="dashboard-card"><h3>Planner note</h3><p>The venue has confirmed the access window. Please review the updated setup timing before our next check-in.</p><a class="card-link" href="contact.html">Open a conversation</a></article></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">BUDGET VIEW</p><h2>Track estimates against your family’s plan</h2><p>Sample figures for layout preview only; replace these with your event data.</p></div><div class="two-column"><article class="dashboard-card"><h3>Current planning estimate</h3><p class="price">$18,450 / $22,000</p><div class="progress-track" style="--progress:84%"><span></span></div><p>Estimated commitments: 84% of the working budget.</p></article><article class="dashboard-card"><h3>Upcoming decisions</h3><div class="task-row"><span>Photography package</span><span class="status">Compare</span></div><div class="task-row"><span>Dessert table options</span><span class="status">Review</span></div><div class="task-row"><span>Guest transportation</span><span class="status">Discuss</span></div></article></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">VENDOR CHECK-IN</p><h2>Know who is confirmed and what is next</h2></div><div class="card-grid"><article class="card photo-card"><img src="images/pexels-35188691.jpg" alt="Family and guests sharing a quinceañera celebration"><div class="photo-card-copy"><span class="tag">CONFIRMED</span><h3>Venue · Rosewood Hall</h3><p>Setup access begins at 10:00 AM. Floor plan approval is due October 18.</p></div></article><article class="card photo-card"><img src="images/pexels-35511828.jpg" alt="Family and guests sharing a quinceañera celebration"><div class="photo-card-copy"><span class="tag">IN REVIEW</span><h3>Photography · Luna Studio</h3><p>Two package options are saved for the family to compare.</p></div></article><article class="card photo-card"><img src="images/pexels-37097188.jpg" alt="Birthday cake and dessert display styled for a milestone celebration"><div class="photo-card-copy"><span class="tag">TO CONTACT</span><h3>Transportation</h3><p>Collect pickup locations before requesting a route estimate.</p></div></article></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">EVENT TIMELINE</p><h2>Upcoming planning milestones</h2></div><div class="image-split"><img src="images/pexels-37572680.jpg" alt="Birthday cake and dessert display styled for a milestone celebration"><div><article class="card"><div class="task-row"><span>Oct 18 · Room layout approval</span><span class="status">Due soon</span></div><div class="task-row"><span>Oct 24 · Music shortlist review</span><span class="status">Upcoming</span></div><div class="task-row"><span>Nov 02 · Invitation proof</span><span class="status">Upcoming</span></div></article><article class="text-panel" style="margin-top:16px"><h3>Your next check-in</h3><p>Bring questions about the room layout, guest flow, and the entrance moment. Add any new family roles before the timeline review.</p></article></div></div></section>
-</main><div id="siteFooter"></div></body></html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Dashboard | Quinceañera &amp; Sweet Sixteen Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="dashboard-body" data-page="user-dashboard">
+    <main class="dashboard-app">
+        <aside class="dashboard-sidebar" id="dashboardSidebar" aria-label="Client dashboard navigation">
+            <a class="dashboard-brand" href="index.html" aria-label="Quinceañera Sweet Sixteen home">
+                <img src="images/Qs.png" alt="">
+                <span>Quinceañera<br>Sweet Sixteen</span>
+            </a>
+            <p class="dashboard-nav-label">YOUR CELEBRATION</p>
+            <nav class="dashboard-nav">
+                <button class="dashboard-nav-link is-active" type="button" data-dashboard-view="overview" data-view-title="Celebration overview" data-view-kicker="YOUR PLANNING SPACE" data-view-description="Sofia’s quinceañera · June 12, 2027" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"></rect><rect x="13" y="3" width="8" height="5" rx="1.5"></rect><rect x="13" y="10" width="8" height="11" rx="1.5"></rect><rect x="3" y="13" width="8" height="8" rx="1.5"></rect></svg><span>Overview</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="tasks" data-view-title="Planning checklist" data-view-kicker="NEXT STEPS" data-view-description="Review family tasks and upcoming decisions."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h12M8 12h12M8 19h12M3 5h.01M3 12h.01M3 19h.01"></path></svg><span>Checklist</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="budget" data-view-title="Budget overview" data-view-kicker="YOUR EVENT BUDGET" data-view-description="Keep estimates and decisions visible as plans develop."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8m-8 4h8m-8 3h4"></path></svg><span>Budget</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="vendors" data-view-title="Vendor check-in" data-view-kicker="PEOPLE &amp; PLACES" data-view-description="See what is confirmed and which vendor details are still open."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M5 4h14v16H5zM8 11h8m-8 4h5"></path></svg><span>Vendors</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="messages" data-view-title="Planner messages" data-view-kicker="CONVERSATIONS" data-view-description="Keep questions and planner notes together in your workspace."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16l-3-2H5zM8 9h8m-8 4h6"></path></svg><span>Messages</span></button>
+            </nav>
+            <p class="dashboard-nav-label dashboard-system-label">ACCOUNT</p>
+            <nav class="dashboard-nav">
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="settings" data-view-title="Account settings" data-view-kicker="PREFERENCES" data-view-description="Update the details used in your planning workspace."><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5m0-8h.01"></path></svg><span>Settings</span></button>
+                <a class="dashboard-nav-link dashboard-logout" href="login.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"></path></svg><span>Log out</span></a>
+            </nav>
+            <div class="dashboard-sidebar-note"><span class="sidebar-note-dot"></span><p>Your planner is here to help keep each next step clear.</p></div>
+        </aside>
+        <button class="dashboard-sidebar-backdrop" type="button" data-dashboard-menu-close aria-label="Close dashboard menu" tabindex="-1"></button>
+
+        <div class="dashboard-workspace">
+            <header class="dashboard-toolbar">
+                <button class="dashboard-menu-toggle" type="button" data-dashboard-menu-toggle aria-controls="dashboardSidebar" aria-expanded="false" aria-label="Open dashboard menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+                <label class="dashboard-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><span class="visually-hidden">Search your planning space</span><input type="search" placeholder="Search tasks or vendors..." data-dashboard-search></label>
+                <div class="dashboard-toolbar-actions">
+                    <button class="language-btn" id="directionToggle" type="button" aria-label="Switch to right-to-left direction" aria-pressed="false">LTR</button>
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span class="theme-toggle-circle"></span><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg></span></button>
+                    <span class="dashboard-avatar" aria-label="Sofia's family account">SF</span>
+                </div>
+            </header>
+
+            <section class="dashboard-page" id="dashboard" aria-labelledby="dashboard-title">
+                <div class="dashboard-page-heading">
+                    <div><p class="eyebrow" id="dashboard-kicker">YOUR PLANNING SPACE</p><h1 id="dashboard-title">Celebration overview</h1><p id="dashboard-description">Sofia’s quinceañera · June 12, 2027</p></div>
+                    <button class="button" type="button" data-open-dashboard-view="messages">Message your planner</button>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="overview">
+                    <div class="dashboard-metrics" aria-label="Celebration summary">
+                        <article class="dashboard-metric metric-orange"><span class="metric-label">DAYS TO CELEBRATE</span><strong>248</strong><span class="metric-detail">Your date is getting closer</span></article>
+                        <article class="dashboard-metric metric-green"><span class="metric-label">GUEST ESTIMATE</span><strong>120</strong><span class="metric-detail">Guests on the current list</span></article>
+                        <article class="dashboard-metric metric-purple"><span class="metric-label">PLAN PROGRESS</span><strong>68%</strong><span class="metric-detail">12 of 18 checklist items done</span></article>
+                        <article class="dashboard-metric metric-red"><span class="metric-label">OPEN DECISIONS</span><strong>3</strong><span class="metric-detail">One is due this week</span></article>
+                    </div>
+                    <div class="dashboard-panels">
+                        <div class="dashboard-panel dashboard-table-panel" role="region" aria-labelledby="milestones-title">
+                            <div class="dashboard-panel-heading"><h2 id="milestones-title">Upcoming milestones</h2><button type="button" data-open-dashboard-view="tasks">View checklist</button></div>
+                            <div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">MILESTONE</th><th scope="col">DUE DATE</th><th scope="col">STATUS</th></tr></thead><tbody>
+                                <tr data-search-text="Approve room layout Rosewood Hall floor plan"><td><strong>Approve room layout</strong><span>Rosewood Hall · floor plan</span></td><td>Oct 18, 2026</td><td><span class="dashboard-status status-soon">Due soon</span></td></tr>
+                                <tr data-search-text="Choose music shortlist entrance dances"><td><strong>Choose music shortlist</strong><span>Entrance and family dances</span></td><td>Oct 24, 2026</td><td><span class="dashboard-status status-progress">In progress</span></td></tr>
+                                <tr data-search-text="Review invitation proof guest list"><td><strong>Review invitation proof</strong><span>Guest list · first draft</span></td><td>Nov 02, 2026</td><td><span class="dashboard-status status-planned">Upcoming</span></td></tr>
+                            </tbody></table></div>
+                        </div>
+                        <aside class="dashboard-panel dashboard-quick-panel" aria-labelledby="quick-actions-title"><h2 id="quick-actions-title">Quick actions</h2>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="messages"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"></path></svg><span>Ask your planner a question</span></button>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="budget"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8m-8 4h8m-8 4h4"></path></svg><span>Review your budget options</span></button>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="tasks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5h12M8 12h12M8 19h12M3 5h.01M3 12h.01M3 19h.01"></path></svg><span>Open the planning checklist</span></button>
+                            <div class="dashboard-note"><strong>Planner note</strong><p>The venue has confirmed your setup access window. Review the updated room layout before the next check-in.</p></div>
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="tasks" hidden>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Tasks for your family</h2><span class="dashboard-status status-progress">12 of 18 complete</span></div><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">TASK</th><th scope="col">OWNER</th><th scope="col">DUE</th><th scope="col">STATUS</th></tr></thead><tbody>
+                        <tr data-search-text="Choose invitation wording family"><td><strong>Choose final invitation wording</strong><span>Confirm names and event details</span></td><td>Your family</td><td>Oct 16</td><td><span class="dashboard-status status-soon">This week</span></td></tr>
+                        <tr data-search-text="Approve room layout venue floor plan"><td><strong>Approve the room layout</strong><span>Review seating and guest flow</span></td><td>Your family</td><td>Oct 18</td><td><span class="dashboard-status status-soon">Due soon</span></td></tr>
+                        <tr data-search-text="Confirm ceremony participants"><td><strong>Confirm ceremony participants</strong><span>Share names and roles with your planner</span></td><td>Your family</td><td>Oct 18</td><td><span class="dashboard-status status-progress">In progress</span></td></tr>
+                        <tr data-search-text="Review music shortlist"><td><strong>Review the music shortlist</strong><span>Mark the songs for key moments</span></td><td>Your family</td><td>Oct 24</td><td><span class="dashboard-status status-planned">Upcoming</span></td></tr>
+                    </tbody></table></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="budget" hidden>
+                    <div class="dashboard-metrics dashboard-budget-summary"><article class="dashboard-metric metric-orange"><span class="metric-label">WORKING BUDGET</span><strong>$22,000</strong><span class="metric-detail">Current family target</span></article><article class="dashboard-metric metric-purple"><span class="metric-label">ESTIMATED COMMITMENTS</span><strong>$18,450</strong><span class="metric-detail">About 84% of the target</span></article></div>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Estimate by category</h2><span class="dashboard-status status-progress">Updated Oct 06</span></div><div class="budget-category"><div><strong>Venue and catering</strong><span>$8,200 of $9,000</span></div><div class="progress-track" style="--progress:91%"><span></span></div></div><div class="budget-category"><div><strong>Photography and video</strong><span>$2,600 of $3,000</span></div><div class="progress-track" style="--progress:87%"><span></span></div></div><div class="budget-category"><div><strong>Décor and florals</strong><span>$3,450 of $4,000</span></div><div class="progress-track" style="--progress:86%"><span></span></div></div><div class="budget-category"><div><strong>Music and other details</strong><span>$4,200 of $6,000</span></div><div class="progress-track" style="--progress:70%"><span></span></div></div><p class="dashboard-muted-note">These planning figures are estimates; confirm final costs with each vendor.</p></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="vendors" hidden>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Vendor status</h2><span class="dashboard-status status-progress">2 confirmed · 1 to review</span></div><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">VENDOR</th><th scope="col">SERVICE</th><th scope="col">STATUS</th><th scope="col">NEXT STEP</th></tr></thead><tbody>
+                        <tr data-search-text="Rosewood Hall venue confirmed layout"><td><strong>Rosewood Hall</strong><span>Setup access starts at 10:00 AM</span></td><td>Venue</td><td><span class="dashboard-status status-progress">Confirmed</span></td><td>Approve floor plan</td></tr>
+                        <tr data-search-text="Luna Studio photography package compare"><td><strong>Luna Studio</strong><span>Two package options saved</span></td><td>Photography</td><td><span class="dashboard-status status-soon">In review</span></td><td>Compare coverage</td></tr>
+                        <tr data-search-text="Transportation pickup route estimate"><td><strong>Transportation</strong><span>Pickup details needed</span></td><td>Guest travel</td><td><span class="dashboard-status status-planned">To contact</span></td><td>Collect addresses</td></tr>
+                    </tbody></table></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="messages" hidden>
+                    <div class="message-list"><article class="dashboard-panel message-card" data-search-text="Room layout Rosewood Hall planner note"><div class="message-card-heading"><div><span class="message-avatar">PL</span><strong>Planning team</strong></div><time datetime="2026-10-06">Oct 06</time></div><h2>Room layout is ready for review</h2><p>The venue confirmed the setup access window. Please review the current seating plan and mark any family groupings you would like us to adjust.</p></article><article class="dashboard-panel message-card" data-search-text="Music shortlist family dances planner follow up"><div class="message-card-heading"><div><span class="message-avatar">PL</span><strong>Planning team</strong></div><time datetime="2026-10-02">Oct 02</time></div><h2>Music shortlist check-in</h2><p>When you have a moment, choose the songs for the entrance and family dances. We can help narrow down options during your next check-in.</p></article><div class="dashboard-panel message-compose"><h2>Send a note to your planner</h2><form data-dashboard-message-form><label for="plannerMessage">Your message</label><textarea id="plannerMessage" required placeholder="Write a question or update..."></textarea><button class="button" type="submit">Send message</button><p class="settings-saved" data-message-status hidden>Demo only: connect a messaging service to deliver your note.</p></form></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="settings" hidden>
+                    <div class="dashboard-settings-grid"><div class="dashboard-panel"><h2>Profile details</h2><form class="dashboard-settings-form" data-dashboard-settings><label>Name<input name="name" value="Sofia’s family" autocomplete="name"></label><label>Email address<input name="email" type="email" value="family@example.com" autocomplete="email"></label><label>Celebration date<input name="eventDate" type="date" value="2027-06-12"></label><button class="button" type="submit">Save profile</button><p class="settings-saved" hidden>Profile settings saved in this browser.</p></form></div><div class="dashboard-panel"><h2>Planning preferences</h2><form class="dashboard-settings-form" data-dashboard-settings><label class="setting-check"><input type="checkbox" name="weeklySummary" checked><span>Send me a weekly planning summary</span></label><label class="setting-check"><input type="checkbox" name="vendorUpdates" checked><span>Include vendor updates in my messages</span></label><label class="setting-check"><input type="checkbox" name="deadlineReminders" checked><span>Remind me before task due dates</span></label><button class="button button-outline" type="submit">Save preferences</button><p class="settings-saved" hidden>Preferences saved in this browser.</p></form></div></div>
+                </div>
+                <p class="dashboard-empty-search" hidden>No matching items in this view.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

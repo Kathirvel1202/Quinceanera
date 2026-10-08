@@ -11,8 +11,11 @@
     <main>
         <section class="auth-section">
             <img class="auth-backdrop" src="images/pexels-33438719.jpg" alt="Quinceañera celebrant posing in formal attire">
-            <div class="auth-card">
-                <a class="auth-back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+            <div class="auth-card signup-card">
+                <a class="auth-brand" href="index.html" aria-label="Quinceañera Sweet Sixteen home">
+                    <img src="images/Qs.png" alt="">
+                    <span>Quinceañera<br>Sweet Sixteen</span>
+                </a>
                 <nav class="auth-tabs" aria-label="Account pages">
                     <a class="auth-tab" href="login.html">Log in</a>
                     <a class="auth-tab" href="signup.html" aria-current="page">Register</a>
@@ -20,7 +23,8 @@
                 <p class="eyebrow">CREATE YOUR ACCOUNT</p>
                 <h1>Start planning together</h1>
                 <p class="auth-intro">Set up an account for your celebration planning workspace.</p>
-                <form class="auth-form demo-form">
+                <form class="auth-form signup-form demo-form">
+                    <div class="signup-fields">
                     <div class="field">
                         <label for="signupName">Your name</label>
                         <input id="signupName" name="name" type="text" autocomplete="name" required>
@@ -42,6 +46,7 @@
                             <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required>
                             <button class="password-toggle" type="button" data-password-toggle aria-controls="confirmPassword" aria-label="Show password" aria-pressed="false"></button>
                         </div>
+                    </div>
                     </div>
                     <div class="field"><label class="terms-label"><input type="checkbox" name="terms" required><span>I agree to the account terms.</span></label></div>
                     <button class="button auth-submit" type="submit">Create account</button>

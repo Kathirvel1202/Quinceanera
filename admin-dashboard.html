@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Dashboard | Quinceañera Event Planner</title><link rel="stylesheet" href="css/style.css"><script src="js/site-shell.js" defer></script><script src="js/main.js" defer></script></head>
-<body data-page="admin-dashboard"><div id="siteHeader"></div><main>
-    <section class="section"><div class="dashboard-top"><div><p class="eyebrow">PLANNER OPERATIONS · SAMPLE VIEW</p><h1>Good morning, team</h1><p>Operations overview for the current planning cycle.</p></div><a href="contact.html" class="button">Add inquiry</a></div><img class="section-image" src="images/pexels-12688993.jpg" alt="Banquet room prepared with event tables and floral details"></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">WORKLOAD SNAPSHOT</p><h2>Priorities across the planning desk</h2></div><div class="stats-grid"><div class="stat-card"><strong>14</strong><span>Active events</span></div><div class="stat-card"><strong>6</strong><span>New inquiries</span></div><div class="stat-card"><strong>9</strong><span>Tasks due this week</span></div><div class="stat-card"><strong>3</strong><span>Quotes awaiting review</span></div></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">INQUIRY QUEUE</p><h2>Respond to families who are waiting</h2></div><div class="card-grid"><article class="card photo-card"><img src="images/quinceanera-venue.jpg" alt="Reception setup similar to a quinceañera inquiry"><div class="photo-card-copy"><span class="tag">NEW · TODAY</span><h3>Martinez family</h3><p>Quinceañera · May 2027 · about 150 guests</p><div class="task-row"><span>Requested: partial planning</span><span class="status">Assign</span></div></div></article><article class="card photo-card"><img src="images/celebration-cake.jpg" alt="Birthday dessert arrangement similar to a Sweet Sixteen event"><div class="photo-card-copy"><span class="tag">FOLLOW-UP</span><h3>Rivera family</h3><p>Sweet Sixteen · August 2027 · venue not selected</p><div class="task-row"><span>Last contact: 3 days ago</span><span class="status">Reply</span></div></div></article><article class="card photo-card"><img src="images/pexels-15613459.jpg" alt="Banquet room prepared with event tables and floral details"><div class="photo-card-copy"><span class="tag">QUOTE READY</span><h3>Chen family</h3><p>Quinceañera · February 2028 · design consultation</p><div class="task-row"><span>Proposal needs final review</span><span class="status">Review</span></div></div></article></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">EVENT PIPELINE</p><h2>See the stage each celebration is in</h2></div><div class="card-grid"><article class="card photo-card"><img src="images/pexels-16120229.jpg" alt="Banquet room prepared with event tables and floral details"><div class="photo-card-copy"><h3>Discovery · 4</h3><p>Confirm scope, dates, and family priorities.</p><ul><li>2 consultations scheduled</li><li>2 replies needed</li></ul></div></article><article class="card photo-card"><img src="images/pexels-16985112.jpg" alt="Banquet room prepared with event tables and floral details"><div class="photo-card-copy"><h3>Planning · 7</h3><p>Design, vendor, and schedule decisions underway.</p><ul><li>3 venue follow-ups</li><li>4 timeline reviews</li></ul></div></article><article class="card photo-card"><img src="images/pexels-17206096.jpg" alt="Reception table styled with flowers and guest place settings"><div class="photo-card-copy"><h3>Event-ready · 3</h3><p>Final confirmations and run-of-show preparation.</p><ul><li>1 vendor packet to send</li><li>2 schedules to approve</li></ul></div></article></div></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">TEAM TASKS</p><h2>Assignments that need attention this week</h2></div><div class="dashboard-grid"><article class="dashboard-card"><h3>Planning coordinator</h3><div class="task-row"><span>Send venue comparison</span><span class="status">Today</span></div><div class="task-row"><span>Update Martinez inquiry</span><span class="status">Oct 09</span></div></article><article class="dashboard-card"><h3>Design lead</h3><div class="task-row"><span>Prepare palette references</span><span class="status">Oct 10</span></div><div class="task-row"><span>Review Chen proposal</span><span class="status">Oct 11</span></div></article><article class="dashboard-card"><h3>Operations</h3><div class="task-row"><span>Confirm weekend access</span><span class="status">Oct 09</span></div><div class="task-row"><span>Publish next week schedule</span><span class="status">Oct 10</span></div></article></div><img class="section-image" src="images/pexels-17294764.jpg" alt="Banquet room prepared with event tables and floral details"></section>
-    <section class="section"><div class="section-heading"><p class="eyebrow">UPCOMING EVENTS</p><h2>Calendar checkpoints</h2></div><div class="image-split"><img src="images/garden-arch.jpg" alt="Outdoor venue prepared for an upcoming celebration"><div><article class="card"><div class="task-row"><span>Oct 10 · Ortiz venue walk-through</span><span class="status">10:30 AM</span></div><div class="task-row"><span>Oct 11 · Chen proposal review</span><span class="status">1:00 PM</span></div><div class="task-row"><span>Oct 12 · Team timeline sync</span><span class="status">9:00 AM</span></div></article><article class="text-panel" style="margin-top:16px"><h3>Operations note</h3><p>These entries are sample planning data for the interface preview. Connect the dashboard to your scheduling and client systems before using it for live operations.</p></article></div></div></section>
-</main><div id="siteFooter"></div></body></html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Quinceañera &amp; Sweet Sixteen Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body class="dashboard-body" data-page="admin-dashboard">
+    <main class="dashboard-app">
+        <aside class="dashboard-sidebar" id="dashboardSidebar" aria-label="Administrator dashboard navigation">
+            <a class="dashboard-brand" href="index.html" aria-label="Quinceañera Sweet Sixteen home">
+                <img src="images/Qs.png" alt="">
+                <span>Quinceañera<br>Sweet Sixteen</span>
+            </a>
+            <p class="dashboard-nav-label">OPERATIONS</p>
+            <nav class="dashboard-nav">
+                <button class="dashboard-nav-link is-active" type="button" data-dashboard-view="overview" data-view-title="Facility overview" data-view-kicker="PLANNER OPERATIONS" data-view-description="Current event pipeline and follow-up priorities." aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"></rect><rect x="13" y="3" width="8" height="5" rx="1.5"></rect><rect x="13" y="10" width="8" height="11" rx="1.5"></rect><rect x="3" y="13" width="8" height="8" rx="1.5"></rect></svg><span>Dashboard</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="inquiries" data-view-title="Inquiry queue" data-view-kicker="FAMILY INQUIRIES" data-view-description="Review new requests and follow-ups in one workspace."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16l-3-2H5zM8 9h8m-8 4h6"></path></svg><span>Inquiries</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="packages" data-view-title="Packages & venues" data-view-kicker="PLANNING CATALOG" data-view-description="Review service packages and venue coordination status."><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M5 4h14v16H5zM8 11h8m-8 4h5"></path></svg><span>Packages &amp; venues</span></button>
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="clients" data-view-title="Client directory" data-view-kicker="FAMILY WORKSPACES" data-view-description="Track active families and their upcoming milestones."><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.4 2.6-5.5 6-5.5s6 2.1 6 5.5m2-10a3 3 0 1 0 0-6m1 10.5c2.4.5 3.7 2.1 3.7 4.5"></path></svg><span>Clients</span></button>
+            </nav>
+            <p class="dashboard-nav-label dashboard-system-label">SYSTEM</p>
+            <nav class="dashboard-nav">
+                <button class="dashboard-nav-link" type="button" data-dashboard-view="settings" data-view-title="Dashboard settings" data-view-kicker="SYSTEM PREFERENCES" data-view-description="Manage workspace and notification preferences."><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 11v5m0-8h.01"></path></svg><span>Settings</span></button>
+                <a class="dashboard-nav-link dashboard-logout" href="login.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7"></path></svg><span>Log out</span></a>
+            </nav>
+            <div class="dashboard-sidebar-note"><span class="sidebar-note-dot"></span><p>Keep each family’s next action visible and assigned.</p></div>
+        </aside>
+        <button class="dashboard-sidebar-backdrop" type="button" data-dashboard-menu-close aria-label="Close dashboard menu" tabindex="-1"></button>
+
+        <div class="dashboard-workspace">
+            <header class="dashboard-toolbar">
+                <button class="dashboard-menu-toggle" type="button" data-dashboard-menu-toggle aria-controls="dashboardSidebar" aria-expanded="false" aria-label="Open dashboard menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+                <label class="dashboard-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><span class="visually-hidden">Search events and clients</span><input type="search" placeholder="Search events or clients..." data-dashboard-search></label>
+                <div class="dashboard-toolbar-actions">
+                    <button class="language-btn" id="directionToggle" type="button" aria-label="Switch to right-to-left direction" aria-pressed="false">LTR</button>
+                    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false"><span class="theme-toggle-circle"></span><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg></span></button>
+                    <span class="dashboard-avatar" aria-label="Administrator account">AD</span>
+                </div>
+            </header>
+
+            <section class="dashboard-page" id="dashboard" aria-labelledby="dashboard-title">
+                <div class="dashboard-page-heading">
+                    <div><p class="eyebrow" id="dashboard-kicker">PLANNER OPERATIONS</p><h1 id="dashboard-title">Facility overview</h1><p id="dashboard-description">Current event pipeline and follow-up priorities.</p></div>
+                    <button class="button" type="button" data-open-dashboard-view="inquiries">Add inquiry</button>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="overview">
+                    <div class="dashboard-metrics" aria-label="Operations summary">
+                        <article class="dashboard-metric metric-orange"><span class="metric-label">UPCOMING EVENTS</span><strong>42</strong><span class="metric-detail">Across the active calendar</span></article>
+                        <article class="dashboard-metric metric-green"><span class="metric-label">MONTHLY REVENUE</span><strong>$142.5K</strong><span class="metric-detail">Current month · sample data</span></article>
+                        <article class="dashboard-metric metric-purple"><span class="metric-label">TOTAL CLIENTS</span><strong>3,204</strong><span class="metric-detail">Families in the planner</span></article>
+                        <article class="dashboard-metric metric-red"><span class="metric-label">PENDING INQUIRIES</span><strong>8 leads</strong><span class="metric-detail">Need a response or assignment</span></article>
+                    </div>
+                    <div class="dashboard-panels">
+                        <div class="dashboard-panel dashboard-table-panel" role="region" aria-labelledby="bookings-title">
+                            <div class="dashboard-panel-heading"><h2 id="bookings-title">Recent bookings</h2><button type="button" data-open-dashboard-view="clients">View clients</button></div>
+                            <div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">BOOKING ID</th><th scope="col">CLIENT</th><th scope="col">STATUS</th><th scope="col">NEXT STEP</th></tr></thead><tbody>
+                                <tr data-search-text="BKG-405 Martinez Quinceañera awaiting deposit"><td><strong>#BKG-405</strong><span>Quinceañera · May 2027</span></td><td>Martinez family</td><td><span class="dashboard-status status-soon">Awaiting deposit</span></td><td><button type="button" data-open-dashboard-view="inquiries">Manage</button></td></tr>
+                                <tr data-search-text="BKG-402 Rivera Sweet Sixteen confirmed"><td><strong>#BKG-402</strong><span>Sweet Sixteen · August 2027</span></td><td>Rivera family</td><td><span class="dashboard-status status-progress">Confirmed</span></td><td><button type="button" data-open-dashboard-view="clients">Details</button></td></tr>
+                                <tr data-search-text="BKG-398 Chen Quinceañera quote review"><td><strong>#BKG-398</strong><span>Quinceañera · February 2028</span></td><td>Chen family</td><td><span class="dashboard-status status-planned">Quote review</span></td><td><button type="button" data-open-dashboard-view="inquiries">Review</button></td></tr>
+                            </tbody></table></div>
+                        </div>
+                        <aside class="dashboard-panel dashboard-quick-panel" aria-labelledby="quick-actions-title"><h2 id="quick-actions-title">Quick actions</h2>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="inquiries"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-7-7h14"></path></svg><span>Create or review an inquiry</span></button>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="packages"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8m-8 4h8m-8 4h4"></path></svg><span>Manage packages and venues</span></button>
+                            <button class="dashboard-action" type="button" data-open-dashboard-view="clients"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.4 2.6-5.5 6-5.5s6 2.1 6 5.5m2-10a3 3 0 1 0 0-6m1 10.5c2.4.5 3.7 2.1 3.7 4.5"></path></svg><span>Open the client directory</span></button>
+                            <div class="dashboard-note"><strong>Today’s focus</strong><p>Assign the new Martinez inquiry and send the Chen proposal after the final scope review.</p></div>
+                        </aside>
+                    </div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="inquiries" hidden>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Open inquiries</h2><span class="dashboard-status status-soon">8 need attention</span></div><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">FAMILY</th><th scope="col">CELEBRATION</th><th scope="col">REQUEST</th><th scope="col">STATUS</th><th scope="col">NEXT ACTION</th></tr></thead><tbody>
+                        <tr data-search-text="Martinez family quinceañera May 2027 partial planning new today"><td><strong>Martinez family</strong><span>Received today</span></td><td>Quinceañera · May 2027</td><td>Partial planning</td><td><span class="dashboard-status status-soon">New</span></td><td><button type="button" data-open-dashboard-view="settings">Assign owner</button></td></tr>
+                        <tr data-search-text="Rivera family sweet sixteen August 2027 follow-up"><td><strong>Rivera family</strong><span>Last contact · Oct 03</span></td><td>Sweet Sixteen · August 2027</td><td>Venue not selected</td><td><span class="dashboard-status status-planned">Follow-up</span></td><td><button type="button" data-open-dashboard-view="clients">Open client</button></td></tr>
+                        <tr data-search-text="Chen family quinceañera February 2028 quote review"><td><strong>Chen family</strong><span>Proposal ready for review</span></td><td>Quinceañera · February 2028</td><td>Design consultation</td><td><span class="dashboard-status status-progress">Quote ready</span></td><td><button type="button" data-open-dashboard-view="packages">Review quote</button></td></tr>
+                    </tbody></table></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="packages" hidden>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Services and venue coordination</h2><span class="dashboard-status status-progress">Catalog active</span></div><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">SERVICE</th><th scope="col">SCOPE</th><th scope="col">ACTIVE EVENTS</th><th scope="col">STATUS</th></tr></thead><tbody>
+                        <tr data-search-text="Full-service planning roadmap design vendor coordination"><td><strong>Full-service planning</strong><span>Complete event guidance</span></td><td>Planning, design, vendors, schedule</td><td>14</td><td><span class="dashboard-status status-progress">Available</span></td></tr>
+                        <tr data-search-text="Partial planning focused support timeline"><td><strong>Partial planning</strong><span>Support for selected details</span></td><td>Review, priority tasks, timeline</td><td>18</td><td><span class="dashboard-status status-progress">Available</span></td></tr>
+                        <tr data-search-text="Day-of coordination run of show vendor handoffs"><td><strong>Day-of coordination</strong><span>Event-day operations</span></td><td>Run-of-show, contacts, handoffs</td><td>10</td><td><span class="dashboard-status status-progress">Available</span></td></tr>
+                        <tr data-search-text="Rosewood Hall venue partner setup capacity"><td><strong>Rosewood Hall</strong><span>Preferred venue partner</span></td><td>Setup access · 10:00 AM</td><td>6</td><td><span class="dashboard-status status-planned">Review dates</span></td></tr>
+                    </tbody></table></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="clients" hidden>
+                    <div class="dashboard-panel dashboard-full-panel"><div class="dashboard-panel-heading"><h2>Active client workspaces</h2><span class="dashboard-status status-progress">3 highlighted</span></div><div class="dashboard-table-wrap"><table class="dashboard-table"><thead><tr><th scope="col">CLIENT</th><th scope="col">EVENT</th><th scope="col">PROGRESS</th><th scope="col">NEXT MILESTONE</th><th scope="col">STATUS</th></tr></thead><tbody>
+                        <tr data-search-text="Martinez family Quinceañera May 2027 room layout"><td><strong>Martinez family</strong><span>Lead planner · Ana R.</span></td><td>Quinceañera · May 2027</td><td>54%</td><td>Venue comparison</td><td><span class="dashboard-status status-soon">Active</span></td></tr>
+                        <tr data-search-text="Rivera family Sweet Sixteen August 2027 invitation proof"><td><strong>Rivera family</strong><span>Lead planner · Jordan K.</span></td><td>Sweet Sixteen · August 2027</td><td>71%</td><td>Invitation proof</td><td><span class="dashboard-status status-progress">On track</span></td></tr>
+                        <tr data-search-text="Chen family Quinceañera February 2028 design consultation"><td><strong>Chen family</strong><span>Lead planner · Ana R.</span></td><td>Quinceañera · February 2028</td><td>32%</td><td>Quote approval</td><td><span class="dashboard-status status-planned">In planning</span></td></tr>
+                    </tbody></table></div></div>
+                </div>
+
+                <div class="dashboard-view" data-dashboard-panel="settings" hidden>
+                    <div class="dashboard-settings-grid"><div class="dashboard-panel"><h2>Workspace profile</h2><form class="dashboard-settings-form" data-dashboard-settings><label>Planner name<input name="plannerName" value="Quinceañera Planning Team"></label><label>Reply-to email<input name="replyEmail" type="email" value="hello@example.com"></label><label>Default response window<select name="responseWindow"><option>Within one business day</option><option>Within two business days</option><option>Within three business days</option></select></label><button class="button" type="submit">Save workspace</button><p class="settings-saved" hidden>Workspace settings saved in this browser.</p></form></div><div class="dashboard-panel"><h2>Operations preferences</h2><form class="dashboard-settings-form" data-dashboard-settings><label class="setting-check"><input type="checkbox" name="newInquiries" checked><span>Notify me when an inquiry arrives</span></label><label class="setting-check"><input type="checkbox" name="quoteReviews" checked><span>Highlight quotes waiting for review</span></label><label class="setting-check"><input type="checkbox" name="weeklyDigest" checked><span>Prepare a weekly operations summary</span></label><button class="button button-outline" type="submit">Save preferences</button><p class="settings-saved" hidden>Preferences saved in this browser.</p></form></div></div>
+                </div>
+                <p class="dashboard-empty-search" hidden>No matching items in this view.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

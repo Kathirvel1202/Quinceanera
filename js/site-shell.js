@@ -9,7 +9,7 @@ if (headerSlot) {
                     <img src="images/QS.png" alt="Quinceañera event planner logo" class="brand-logo">
                     <span class="brand-name">Quinceañera<br>Sweet Sixteen</span>
                 </a>
-                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation">☰</button>
+                <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNavigation"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"></path></svg></button>
                 <div class="nav-links" id="mainNavigation">
                     <details class="nav-dropdown">
                         <summary class="nav-link">Home</summary>
@@ -34,7 +34,7 @@ if (headerSlot) {
                 </div>
                 <div class="nav-actions">
                     <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
-                        <span class="theme-toggle-circle"></span><span class="theme-icon" aria-hidden="true">☀</span>
+                        <span class="theme-toggle-circle"></span><span class="theme-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg></span>
                     </button>
                     <button class="language-btn" id="directionToggle" type="button" aria-label="Switch to right-to-left direction" aria-pressed="false">LTR</button>
                     <span class="nav-divider" aria-hidden="true"></span>
