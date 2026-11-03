@@ -118,7 +118,8 @@ main { overflow: hidden; }
 .card-link:hover { text-decoration: underline; }
 .feature-icon { display: inline-grid; width: 46px; height: 46px; flex: 0 0 46px; place-items: center; margin-bottom: 14px; border-radius: 15px; background: var(--soft-orange); color: var(--brown); }
 .feature-icon svg { display: block; width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.8; }
-.two-column { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: clamp(22px, 3.2vw, 36px); max-width: 1100px; margin: 0 auto; }
+.two-column { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: clamp(22px, 3.2vw, 36px); max-width: 1100px; margin: 0 auto; }
+.two-column > .card { display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box; }
 .text-panel { padding: 26px; border-radius: 20px; background: #fff0df; }
 .text-panel h3 { margin-bottom: 10px; color: var(--brown); font-size: 21px; }
 .text-panel p, .text-panel li { color: #5f5144; line-height: 1.7; }
