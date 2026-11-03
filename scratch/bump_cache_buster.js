@@ -10,14 +10,14 @@ for (const file of htmlFiles) {
     let html = fs.readFileSync(filePath, 'utf8');
     const original = html;
 
-    // Update style.css cache-buster
-    html = html.replace(/css\/style\.css(\?v=[0-9.]+)?/g, 'css/style.css?v=4.2');
+    // Update style.css cache-buster to 4.5
+    html = html.replace(/css\/style\.css(\?v=[0-9.]+)?/g, 'css/style.css?v=4.5');
 
-    // Update js/main.js cache-buster
-    html = html.replace(/js\/main\.js(\?v=[0-9.]+)?/g, 'js/main.js?v=4.2');
+    // Update js/main.js cache-buster to 4.5
+    html = html.replace(/js\/main\.js(\?v=[0-9.]+)?/g, 'js/main.js?v=4.5');
 
-    // Update js/site-shell.js cache-buster
-    html = html.replace(/js\/site-shell\.js(\?v=[0-9.]+)?/g, 'js/site-shell.js?v=4.2');
+    // Update js/site-shell.js cache-buster to 4.5
+    html = html.replace(/js\/site-shell\.js(\?v=[0-9.]+)?/g, 'js/site-shell.js?v=4.5');
 
     if (html !== original) {
         fs.writeFileSync(filePath, html, 'utf8');

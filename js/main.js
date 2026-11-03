@@ -24,7 +24,7 @@ const menuOpenIcon = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="fal
 const menuCloseIcon = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 5 14 14M19 5 5 19"></path></svg>`;
 
 const siteHeader = document.querySelector(".site-header");
-let closedHeaderHeight = 72;
+let closedHeaderHeight = 58;
 
 const updateHeroHeaderHeight = () => {
     if (!siteHeader) return;
