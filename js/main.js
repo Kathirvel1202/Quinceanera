@@ -24,14 +24,24 @@ const menuOpenIcon = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="fal
 const menuCloseIcon = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 5 14 14M19 5 5 19"></path></svg>`;
 
 const siteHeader = document.querySelector(".site-header");
-if (siteHeader) {
-    const updateHeroHeaderHeight = () => {
+let closedHeaderHeight = 72;
+
+const updateHeroHeaderHeight = () => {
+    if (!siteHeader) return;
+    if (navbar && navbar.classList.contains("is-open")) {
+        return;
+    }
+    const currentHeight = Math.ceil(siteHeader.getBoundingClientRect().height);
+    if (currentHeight > 0 && currentHeight <= 100) {
+        closedHeaderHeight = currentHeight;
         document.documentElement.style.setProperty(
             "--site-header-height",
-            `${Math.ceil(siteHeader.getBoundingClientRect().height)}px`
+            `${closedHeaderHeight}px`
         );
-    };
+    }
+};
 
+if (siteHeader) {
     updateHeroHeaderHeight();
     if ("ResizeObserver" in window) {
         new ResizeObserver(updateHeroHeaderHeight).observe(siteHeader);
@@ -46,6 +56,9 @@ if (navbar && menuToggle) {
         menuToggle.setAttribute("aria-expanded", String(isOpen));
         menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
         menuToggle.innerHTML = isOpen ? menuCloseIcon : menuOpenIcon;
+        if (!isOpen) {
+            requestAnimationFrame(updateHeroHeaderHeight);
+        }
     };
 
     menuToggle.addEventListener("click", () => setMenuState(!navbar.classList.contains("is-open")));
