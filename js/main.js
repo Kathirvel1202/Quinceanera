@@ -349,3 +349,63 @@ document.querySelectorAll(".dashboard-app").forEach((app) => {
 
     showView("overview");
 });
+
+
+// FAQ Live Search & Category Filter
+const faqSearchInput = document.getElementById("faqSearchInput");
+const faqCategoryButtons = document.querySelectorAll("[data-faq-category]");
+const faqItems = document.querySelectorAll(".faq-item[data-category]");
+const faqEmptyState = document.getElementById("faqEmptyState");
+
+if (faqItems.length > 0) {
+    let activeCategory = "all";
+    let searchQuery = "";
+
+    const filterFaqs = () => {
+        let visibleCount = 0;
+        const query = searchQuery.trim().toLowerCase();
+
+        faqItems.forEach((item) => {
+            const itemCategory = item.getAttribute("data-category") || "all";
+            const summaryText = item.querySelector("summary")?.textContent || "";
+            const answerText = item.querySelector(".faq-answer")?.textContent || "";
+            const textContent = (summaryText + " " + answerText).toLowerCase();
+            const matchesCategory = activeCategory === "all" || itemCategory === activeCategory;
+            const matchesSearch = query === "" || textContent.includes(query);
+
+            if (matchesCategory && matchesSearch) {
+                item.hidden = false;
+                visibleCount++;
+            } else {
+                item.hidden = true;
+            }
+        });
+
+        document.querySelectorAll("[data-faq-group]").forEach((group) => {
+            const hasVisibleItems = group.querySelectorAll(".faq-item:not([hidden])").length > 0;
+            group.hidden = !hasVisibleItems;
+        });
+
+        if (faqEmptyState) {
+            faqEmptyState.hidden = visibleCount > 0;
+        }
+    };
+
+    faqSearchInput?.addEventListener("input", (e) => {
+        searchQuery = e.target.value;
+        filterFaqs();
+    });
+
+    faqCategoryButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            faqCategoryButtons.forEach((b) => {
+                b.classList.remove("active");
+                b.setAttribute("aria-pressed", "false");
+            });
+            btn.classList.add("active");
+            btn.setAttribute("aria-pressed", "true");
+            activeCategory = btn.getAttribute("data-faq-category") || "all";
+            filterFaqs();
+        });
+    });
+}

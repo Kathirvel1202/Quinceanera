@@ -90,3 +90,14 @@ if (currentLink) {
     if (parentDropdown) parentDropdown.querySelector("summary")?.classList.add("is-current");
     else currentLink.classList.add("active");
 }
+
+// Ensure favicon link resilience across all environments
+(function ensureFavicon() {
+    if (!document.querySelector("link[rel*='icon']")) {
+        const link = document.createElement("link");
+        link.rel = "icon";
+        link.type = "image/x-icon";
+        link.href = "favicon.ico";
+        document.head.appendChild(link);
+    }
+})();
